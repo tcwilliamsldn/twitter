@@ -1,17 +1,17 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import ProfilePage from './ProfilePage/ProfilePage';
-import StatsPage from './StatsPage/StatsPage';
-import NotFoundPage from './NotFoundPage/NotFoundPage';
+import ProfilePage from '../ProfilePage/ProfilePage';
+import StatsPage from '../StatsPage/StatsPage';
+import Error from '../Error/Error';
 
 const App = () => (
-    <div>
+    <main>
         <Switch>
             <Route exact path="/:profileName" component={ProfilePage} />
             <Route exact path="/:profileName/stats" component={StatsPage} />
-            <Route component={NotFoundPage} />
+            <Route render={() => <Error message="404: Page Not Found" />} />
         </Switch>
-    </div>
+    </main>
 );
 
 export default App;

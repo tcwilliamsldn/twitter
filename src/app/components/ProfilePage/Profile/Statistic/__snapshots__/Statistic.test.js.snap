@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Statistic renders a title and a value 1`] = `
+<div>
+  <h3>
+    Stat
+  </h3>
+  <div
+    className="value"
+  >
+    100
+  </div>
+</div>
+`;

@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Profile renders a users profile 1`] = `
+<div
+  className="profile"
+>
+  <div
+    className="banner"
+  />
+  <section
+    className="details"
+  >
+    <div
+      className="personal"
+    >
+      <img
+        className="avatar"
+        src="http://example.com/image.jpg"
+      />
+      <div
+        className="names"
+      >
+        <h1>
+          Tom
+        </h1>
+        <h2>
+          @
+          tom
+        </h2>
+      </div>
+    </div>
+    <div
+      className="stats"
+    >
+      <Statistic
+        title="Tweets"
+        value={123}
+      />
+      <Statistic
+        title="Followers"
+        value={123}
+      />
+      <Statistic
+        title="Following"
+        value={123}
+      />
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Profile resizes the profile image when the image URL contains "normal" 1`] = `
+<div
+  className="profile"
+>
+  <div
+    className="banner"
+  />
+  <section
+    className="details"
+  >
+    <div
+      className="personal"
+    >
+      <img
+        className="avatar"
+        src="http://example.com/image200x200.jpg"
+      />
+      <div
+        className="names"
+      >
+        <h1>
+          Tom
+        </h1>
+        <h2>
+          @
+          tom
+        </h2>
+      </div>
+    </div>
+    <div
+      className="stats"
+    >
+      <Statistic
+        title="Tweets"
+        value={123}
+      />
+      <Statistic
+        title="Followers"
+        value={123}
+      />
+      <Statistic
+        title="Following"
+        value={123}
+      />
+    </div>
+  </section>
+</div>
+`;

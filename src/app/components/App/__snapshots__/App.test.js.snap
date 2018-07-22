@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders the application 1`] = `
+<main>
+  <Switch>
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/:profileName"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/:profileName/stats"
+    />
+    <Route
+      render={[Function]}
+    />
+  </Switch>
+</main>
+`;

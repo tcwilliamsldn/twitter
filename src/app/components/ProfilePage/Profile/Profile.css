@@ -1,0 +1,53 @@
+.profile {
+    background-color: #ffffff;
+    margin: 12px;
+}
+
+.banner {
+    height: 100px;
+    background-color: #3c73ff;
+}
+
+.details {
+    padding: 16px;
+}
+
+.personal {
+    display: flex;
+    margin-bottom: -28px;
+}
+
+.avatar {
+    width: 96px;
+    height: 96px;
+    position: relative;
+    border-radius: 50%;
+    border: #ffffff solid 3px;
+    top: -66px;
+}
+
+.names {
+    margin-left: 16px;
+
+    & > h1 {
+        font-weight: bold;
+        font-size: 24px;
+        padding: 0;
+        margin: 0;
+    }
+
+    & > h2 {
+        color: #737373;
+        font-size: 18px;
+        padding: 0;
+        margin: 0;
+        font-weight: normal;
+    }
+}
+
+.stats {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 80%;
+}

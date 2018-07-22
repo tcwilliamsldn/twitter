@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProfilePage renders a user Profile and Feed on success 1`] = `
+<React.Fragment>
+  <Profile
+    following={120}
+    name="Tom"
+  />
+  <Feed
+    tweets={Array []}
+  />
+</React.Fragment>
+`;
+
+exports[`ProfilePage renders the error state on error 1`] = `
+<Error
+  message="Whoops"
+/>
+`;
+
+exports[`ProfilePage renders the loading state when loading 1`] = `<Loading />`;

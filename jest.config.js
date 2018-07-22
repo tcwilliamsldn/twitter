@@ -9,5 +9,8 @@ module.exports = {
             statements: 90
         }
     },
-    setupFiles: ['./configureEnzyme.js']
+    setupFiles: ['./configureEnzyme.js'],
+    moduleNameMapper: {
+        '\\.(css|less)$': 'identity-obj-proxy'
+    }
 };

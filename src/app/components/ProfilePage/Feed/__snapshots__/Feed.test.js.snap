@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Feed renders a users Tweets 1`] = `
+<div
+  className="feed"
+>
+  <Tweet
+    created_at="Fri Jul 20 02:17:02 +0000 2018"
+    id="123"
+    key="123"
+    text="Hello World"
+    user="tom"
+  />
+  <Tweet
+    created_at="Fri Jul 20 02:17:02 +0000 2018"
+    id="456"
+    key="456"
+    text="Hello World"
+    user="tom"
+  />
+</div>
+`;

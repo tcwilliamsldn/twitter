@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tweet renders a Tweet 1`] = `
+<div
+  className="tweet"
+  key="123"
+>
+  <img
+    className="avatar"
+    src="http://example.com/image.jpg"
+  />
+  <article>
+    <div
+      className="user"
+    >
+      <h3>
+        Tom
+      </h3>
+      <h4>
+        @
+        tom
+      </h4>
+      <time
+        dateTime="Fri Jul 20 02:17:02 +0000 2018"
+      >
+        Jul 20
+      </time>
+    </div>
+    <section>
+      Hello World
+    </section>
+  </article>
+</div>
+`;
+
+exports[`createMentionLinks ignores @s in the middle of a word 1`] = `
+Array [
+  "H",
+  <Link
+    className="link"
+    replace={false}
+    to="ters"
+  >
+    @ters
+  </Link>,
+  " gonna H",
+  <Link
+    className="link"
+    replace={false}
+    to="te"
+  >
+    @te
+  </Link>,
+  "",
+]
+`;
+
+exports[`createMentionLinks ignores @s in the middle of a word and still adds valid links 1`] = `
+Array [
+  "H",
+  <Link
+    className="link"
+    replace={false}
+    to="ters"
+  >
+    @ters
+  </Link>,
+  " gonna H",
+  <Link
+    className="link"
+    replace={false}
+    to="te"
+  >
+    @te
+  </Link>,
+  " ",
+  <Link
+    className="link"
+    replace={false}
+    to="Tom"
+  >
+    @Tom
+  </Link>,
+  "",
+]
+`;
+
+exports[`createMentionLinks leaves non-username trailing letters out of the link 1`] = `
+Array [
+  "",
+  <Link
+    className="link"
+    replace={false}
+    to="Person"
+  >
+    @Person
+  </Link>,
+  "! ",
+  <Link
+    className="link"
+    replace={false}
+    to="Person"
+  >
+    @Person
+  </Link>,
+  "? ",
+  <Link
+    className="link"
+    replace={false}
+    to="Person"
+  >
+    @Person
+  </Link>,
+  ", how are you? RT ",
+  <Link
+    className="link"
+    replace={false}
+    to="Person"
+  >
+    @Person
+  </Link>,
+  ": Link",
+]
+`;
+
+exports[`createMentionLinks turns mentions into Links, that link to the mentioned users profile 1`] = `
+Array [
+  "Hello ",
+  <Link
+    className="link"
+    replace={false}
+    to="person"
+  >
+    @person
+  </Link>,
+  " what a great day",
+]
+`;
