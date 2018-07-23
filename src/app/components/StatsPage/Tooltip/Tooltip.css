@@ -1,0 +1,31 @@
+.tooltip {
+    background-color: #3c73ff;
+    display: inline-block;
+    padding: 12px 24px;
+    text-align: center;
+    margin-left: -50%;
+    margin-top: 8px;
+
+    &::after {
+        position: absolute;
+        height: 0;
+        width: 0;
+        bottom: calc(100% - 8px);
+        left: 50%;
+        border: solid transparent;
+        content: '';
+        pointer-events: none;
+        border-bottom-color: #3c73ff;
+        border-width: 8px;
+        margin-left: calc(-50% - 8px);
+    }
+}
+
+.date {
+    color: #94b4fe;
+}
+
+.count {
+    color: #ffffff;
+    font-weight: bold;
+}
