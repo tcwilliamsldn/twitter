@@ -35,6 +35,12 @@ module.exports = {
                         }
                     }
                 ]
+            },
+            {
+                test: /\.svg$/i,
+                loader: `svg-url-loader?limit=3000&name=${
+                    dev ? '[path][name].[ext]' : '[path][name]-[hash:8].[ext]'
+                }`
             }
         ]
     },
