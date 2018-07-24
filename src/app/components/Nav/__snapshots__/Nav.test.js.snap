@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav renders the correct links in nav from home page 1`] = `
+<nav
+  className="nav"
+>
+  <NavLink
+    activeClassName="active"
+    aria-current="page"
+    className="home"
+    exact={true}
+    to="/test/"
+  >
+    Home
+  </NavLink>
+  <NavLink
+    activeClassName="active"
+    aria-current="page"
+    className="stats"
+    exact={true}
+    to="/test/stats"
+  >
+    Stats
+  </NavLink>
+</nav>
+`;
+
+exports[`Nav renders the correct links in nav from stats page 1`] = `
+<nav
+  className="nav"
+>
+  <NavLink
+    activeClassName="active"
+    aria-current="page"
+    className="home"
+    exact={true}
+    to="/test"
+  >
+    Home
+  </NavLink>
+  <NavLink
+    activeClassName="active"
+    aria-current="page"
+    className="stats"
+    exact={true}
+    to="/test/stats"
+  >
+    Stats
+  </NavLink>
+</nav>
+`;
+
+exports[`Nav renders the nav 1`] = `
+<nav
+  className="nav"
+>
+  <NavLink
+    activeClassName="active"
+    aria-current="page"
+    className="home"
+    exact={true}
+    to="/"
+  >
+    Home
+  </NavLink>
+  <NavLink
+    activeClassName="active"
+    aria-current="page"
+    className="stats"
+    exact={true}
+    to="/stats"
+  >
+    Stats
+  </NavLink>
+</nav>
+`;

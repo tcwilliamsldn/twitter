@@ -6,6 +6,7 @@ exports[`Tweet renders a Tweet 1`] = `
   key="123"
 >
   <img
+    alt="Profile picture of Tom"
     className="avatar"
     src="http://example.com/image.jpg"
   />

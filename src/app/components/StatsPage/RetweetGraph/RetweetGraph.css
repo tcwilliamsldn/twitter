@@ -1,7 +1,7 @@
 .graph {
-    width: 80%;
+    max-width: 1080px;
     background-color: #ffffff;
-    margin: auto;
+    margin: 12px;
     box-shadow: 0px 2px 10px #9a9a9a;
 }
 
@@ -20,5 +20,25 @@
 
     & > span {
         color: #737373;
+    }
+}
+
+.loading {
+    padding: 48px 0 96px;
+    font-size: 24px;
+    text-align: center;
+    color: #757575;
+    animation: fadeInOut 1s infinite;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
     }
 }

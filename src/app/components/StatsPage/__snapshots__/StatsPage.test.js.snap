@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StatsPage renders a user Profile and Feed on success 1`] = `
+<div
+  className="statspage"
+>
+  <RetweetGraph
+    tweets={Array []}
+  />
+</div>
+`;
+
+exports[`StatsPage renders the error state on error 1`] = `
+<Error
+  message="Whoops"
+/>
+`;
+
+exports[`StatsPage renders the loading state when loading 1`] = `<Loading />`;

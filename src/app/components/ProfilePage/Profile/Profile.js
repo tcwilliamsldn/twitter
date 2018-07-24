@@ -19,6 +19,7 @@ const Profile = props => {
             <section className={styles.details}>
                 <div className={styles.personal}>
                     <img
+                        alt={`Profile picture of ${name}`}
                         className={styles.avatar}
                         src={enlargeImage(profile_image_url)}
                     />

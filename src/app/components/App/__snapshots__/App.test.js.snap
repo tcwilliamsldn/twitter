@@ -2,6 +2,10 @@
 
 exports[`App renders the application 1`] = `
 <main>
+  <Route
+    component={[Function]}
+    path="/"
+  />
   <Switch>
     <Route
       component={[Function]}

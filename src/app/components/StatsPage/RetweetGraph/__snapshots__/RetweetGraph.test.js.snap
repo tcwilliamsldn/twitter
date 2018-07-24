@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RetweetGraph renders a loading state 1`] = `
+<div
+  className="graph"
+>
+  <div
+    className="infobar"
+  >
+    <h1>
+      Retweets for your last 50 tweets
+    </h1>
+    <span>
+      110 retweets
+    </span>
+  </div>
+  <div
+    className="loading"
+  >
+    Loading Graph...
+  </div>
+</div>
+`;
+
+exports[`RetweetGraph renders a retweet graph once library loaded 1`] = `
+<div
+  className="graph"
+>
+  <div
+    className="infobar"
+  >
+    <h1>
+      Retweets for your last 50 tweets
+    </h1>
+    <span>
+      110 retweets
+    </span>
+  </div>
+  <mockConstructor
+    areaStyle={
+      Object {
+        "fill": "#e0e9ff",
+        "stroke": "#306aff",
+        "strokeWidth": "2px",
+      }
+    }
+    areas={
+      Array [
+        Object {
+          "coordinates": Array [
+            Object {
+              "date": 1245354273000,
+              "retweet_count": 100,
+            },
+            Object {
+              "date": 1245354273000,
+              "retweet_count": 10,
+            },
+          ],
+        },
+      ]
+    }
+    hoverAnnotation={
+      Array [
+        Object {
+          "color": "transparent",
+          "type": "frame-hover",
+        },
+      ]
+    }
+    responsiveWidth={true}
+    size={
+      Array [
+        700,
+        300,
+      ]
+    }
+    tooltipContent={[Function]}
+    xAccessor="date"
+    yAccessor="retweet_count"
+  />
+</div>
+`;

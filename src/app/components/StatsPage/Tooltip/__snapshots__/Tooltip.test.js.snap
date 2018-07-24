@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tooltip renders a tooltip with correctly formatted date and retweet count 1`] = `
+<div
+  className="tooltip"
+>
+  <div
+    className="date"
+  >
+    Jan 3
+  </div>
+  <div
+    className="count"
+  >
+    Tom retweets
+  </div>
+</div>
+`;

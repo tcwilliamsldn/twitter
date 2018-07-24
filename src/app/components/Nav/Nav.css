@@ -5,7 +5,11 @@
     align-items: center;
     justify-content: center;
     padding-left: 12px;
-    margin-bottom: 12px;
+
+    @media (width > 768px) {
+        justify-content: start;
+        padding-left: 48px;
+    }
 }
 
 .home,
@@ -24,14 +28,29 @@
     }
 
     &:hover {
-        color: #3c73ff;
+        text-decoration: underline;
     }
 }
 
+.active {
+    color: #306aff;
+}
+
+/* When using svgs in the before pseudoelement I can't change the fill
+color, so I've swapped the svg here. I'd potentially rethink this approach
+doing the task again */
 .home::before {
     content: url(./icons/home.svg);
 }
 
+.home.active::before {
+    content: url(./icons/home-active.svg);
+}
+
 .stats::before {
     content: url(./icons/stats.svg);
+}
+
+.stats.active::before {
+    content: url(./icons/stats-active.svg);
 }

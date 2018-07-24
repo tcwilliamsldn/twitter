@@ -2,7 +2,9 @@
 
 exports[`Statistic renders a title and a value 1`] = `
 <div>
-  <h3>
+  <h3
+    className="title"
+  >
     Stat
   </h3>
   <div

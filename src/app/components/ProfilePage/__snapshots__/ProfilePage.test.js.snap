@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ProfilePage renders a user Profile and Feed on success 1`] = `
-<React.Fragment>
+<div
+  className="profilepage"
+>
   <Profile
     following={120}
     name="Tom"
@@ -9,7 +11,7 @@ exports[`ProfilePage renders a user Profile and Feed on success 1`] = `
   <Feed
     tweets={Array []}
   />
-</React.Fragment>
+</div>
 `;
 
 exports[`ProfilePage renders the error state on error 1`] = `

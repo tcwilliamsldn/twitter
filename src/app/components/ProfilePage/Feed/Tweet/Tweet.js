@@ -5,6 +5,7 @@ import enlargeImage from '../../../../utils/enlargeImage';
 
 const Tweet = ({ text, created_at, id, user }) => {
     const { screen_name, name, profile_image_url } = user;
+
     const date = new Date(created_at).toLocaleString('en-gb', {
         month: 'short',
         day: 'numeric'
@@ -13,6 +14,7 @@ const Tweet = ({ text, created_at, id, user }) => {
     return (
         <div className={styles.tweet} key={id}>
             <img
+                alt={`Profile picture of ${name}`}
                 className={styles.avatar}
                 src={enlargeImage(profile_image_url)}
             />

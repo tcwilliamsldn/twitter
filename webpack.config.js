@@ -1,4 +1,7 @@
 const postcssPresetEnv = require('postcss-preset-env');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const WebpackShellPlugin = require('webpack-shell-plugin');
+
 const dev = process.env.NODE_ENV === 'development';
 
 module.exports = {
@@ -38,14 +41,30 @@ module.exports = {
             },
             {
                 test: /\.svg$/i,
-                loader: `svg-url-loader?limit=3000&name=${
-                    dev ? '[path][name].[ext]' : '[path][name]-[hash:8].[ext]'
-                }`
+                loader: 'svg-url-loader?limit=3000&name=[path][name].[ext]'
             }
         ]
     },
+    plugins: [
+        new CopyWebpackPlugin(
+            [
+                {
+                    from: `${__dirname}/src/server`,
+                    to: `${__dirname}/build/server`
+                }
+            ],
+            {}
+        ),
+        dev
+            ? new WebpackShellPlugin({
+                  onBuildEnd: [`npm run start`]
+              })
+            : () => {}
+    ],
     output: {
+        publicPath: '/assets/',
         path: __dirname + '/build/assets',
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        chunkFilename: '[name].bundle.js'
     }
 };
